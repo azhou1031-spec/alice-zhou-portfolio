@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'alice-zhou-portfolio-';
-const CACHE_NAME = CACHE_PREFIX + 'offline-v1';
+const CACHE_NAME = CACHE_PREFIX + 'offline-v2-swipe';
 const FILES = ["./","index.html","style.css","artworks.js","app.js","offline.js","assets/Untitled_Artwork_5.png","assets/Untitled_Artwork_1.png","assets/Untitled_Artwork_6.png","assets/Untitled_Artwork_7.png","assets/Untitled_Artwork_8.png","assets/Character_1_Final.png","assets/Character_1_Silhouette_And_Variation.png","assets/Weapon.png","assets/Untitled_Artwork_9.png","assets/She.png","assets/IMG_2059_3.PNG","assets/IMG_2581_2.PNG","assets/IMG_2599.PNG","assets/IMG_1663_5.PNG","assets/IMG_1513_6.PNG"];
 const root = self.registration.scope;
 self.addEventListener('install', event => {
