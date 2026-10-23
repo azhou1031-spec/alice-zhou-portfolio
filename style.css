@@ -12,3 +12,13 @@
 .cover .collage-row:nth-child(3) .collage-track{animation-duration:125s}
 @keyframes art-drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.cover .collage-track{animation:none;will-change:auto}}
+
+.contact-links{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 30px;font:italic 16px/1.5 'Times New Roman',Times,serif;color:#bbb}
+.contact-links a{pointer-events:auto;padding:8px 0}
+.contact-links a:hover{color:#fff}
+.contact-links span span,.contact-links a span{color:#eee}
+.cover-name .contact-links{margin-top:24px;max-width:95%;pointer-events:auto}
+.discord-contact{user-select:text}
+footer .contact-links{justify-content:flex-start}
+.copyright{margin-top:20px}
+@media(max-width:650px){.cover-name .contact-links{flex-direction:column;gap:2px;margin-top:20px;font-size:15px}.contact-links{gap:8px 22px;font-size:15px}footer .contact-links{align-items:flex-start;flex-direction:column}}
