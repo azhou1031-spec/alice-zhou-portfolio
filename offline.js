@@ -4,7 +4,9 @@ if ('serviceWorker' in navigator) {
   status.style.cssText = 'display:block;margin-top:10px;font:12px Arial,sans-serif;color:#777';
   document.querySelector('footer').append(status);
   status.textContent = 'Saving portfolio for offline viewing…';
-  navigator.serviceWorker.register('./sw.js').then(async registration => {
+  navigator.serviceWorker.register('./sw.js', {updateViaCache: 'none'}).then(async registration => {
+    registration.update().catch(() => {});
+    window.addEventListener('online', () => registration.update().catch(() => {}));
     await navigator.serviceWorker.ready;
     status.textContent = 'Available offline on this device';
     const requestStorage = () => {
